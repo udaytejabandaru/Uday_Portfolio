@@ -1,3 +1,10 @@
+## Notice
+
+This content is part of a personal technical portfolio.
+
+Use is restricted to viewing and evaluation only.
+Copying, reuse, or redistribution is not permitted.
+
 # Handwritten Number Detection through ANN on FPGA
 
 This project implements a handwritten digit classifier using an Artificial Neural Network (ANN) mapped onto an Intel DE1-SoC FPGA board. It demonstrates an end-to-end hardware/software co-design approach, combining FPGA-based acceleration with ARM processor orchestration.
