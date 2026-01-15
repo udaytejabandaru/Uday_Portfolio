@@ -1,0 +1,48 @@
+Results for Benchmarks with configuration ( 64kB 64kB 128kB 4 4 8 64 ) 
+
+
+****** 401.bzip2  
+
+sim_insts                                   500000000                       # Number of instructions simulated
+system.cpu.dcache.overall_misses::total       4330844                       # number of overall misses
+system.cpu.dcache.overall_accesses::total    304821786                       # number of overall (read+write) accesses
+system.cpu.icache.overall_misses::total           956                       # number of overall misses
+system.cpu.icache.overall_accesses::total    687818806                       # number of overall (read+write) accesses
+system.l2.overall_misses::total               3862425                       # number of overall misses
+system.l2.overall_accesses::total             4331800                       # number of overall (read+write) accesses
+****** 429.mcf  
+
+sim_insts                                   500000000                       # Number of instructions simulated
+system.cpu.dcache.overall_misses::total      12500866                       # number of overall misses
+system.cpu.dcache.overall_accesses::total    293777726                       # number of overall (read+write) accesses
+system.cpu.icache.overall_misses::total           677                       # number of overall misses
+system.cpu.icache.overall_accesses::total    677317946                       # number of overall (read+write) accesses
+system.l2.overall_misses::total               9429750                       # number of overall misses
+system.l2.overall_accesses::total            12501543                       # number of overall (read+write) accesses
+****** 456.hmmer  
+
+sim_insts                                   500000001                       # Number of instructions simulated
+system.cpu.dcache.overall_misses::total        387881                       # number of overall misses
+system.cpu.dcache.overall_accesses::total    254894852                       # number of overall (read+write) accesses
+system.cpu.icache.overall_misses::total          1357                       # number of overall misses
+system.cpu.icache.overall_accesses::total    695978066                       # number of overall (read+write) accesses
+system.l2.overall_misses::total                 28717                       # number of overall misses
+system.l2.overall_accesses::total              389238                       # number of overall (read+write) accesses
+****** 458.sjeng  
+
+sim_insts                                   500000000                       # Number of instructions simulated
+system.cpu.dcache.overall_misses::total       8496505                       # number of overall misses
+system.cpu.dcache.overall_accesses::total    271674543                       # number of overall (read+write) accesses
+system.cpu.icache.overall_misses::total         90736                       # number of overall misses
+system.cpu.icache.overall_accesses::total    675353658                       # number of overall (read+write) accesses
+system.l2.overall_misses::total               8401699                       # number of overall misses
+system.l2.overall_accesses::total             8587241                       # number of overall (read+write) accesses
+****** 470.lbm  
+
+sim_insts                                   500000000                       # Number of instructions simulated
+system.cpu.dcache.overall_misses::total       7163162                       # number of overall misses
+system.cpu.dcache.overall_accesses::total    216142309                       # number of overall (read+write) accesses
+system.cpu.icache.overall_misses::total           547                       # number of overall misses
+system.cpu.icache.overall_accesses::total    740208211                       # number of overall (read+write) accesses
+system.l2.overall_misses::total               7163636                       # number of overall misses
+system.l2.overall_accesses::total             7163709                       # number of overall (read+write) accesses

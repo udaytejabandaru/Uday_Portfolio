@@ -1,0 +1,155 @@
+/home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project/MSDAP/data_memory.v {1 {vlog -work work -stats=none /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project/MSDAP/data_memory.v
+Model Technology ModelSim DE vlog 2022.1 Compiler 2022.01 Jan 29 2022
+-- Compiling module data_memory
+
+Top level modules:
+	data_memory
+
+} {} {}} /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project/MSDAP/SIPO.v {1 {vlog -work work -stats=none /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project/MSDAP/SIPO.v
+Model Technology ModelSim DE vlog 2022.1 Compiler 2022.01 Jan 29 2022
+-- Compiling module SIPO
+
+Top level modules:
+	SIPO
+
+} {} {}} /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project/MSDAP/PISO.v {1 {vlog -work work -stats=none /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project/MSDAP/PISO.v
+Model Technology ModelSim DE vlog 2022.1 Compiler 2022.01 Jan 29 2022
+-- Compiling module PISO
+
+Top level modules:
+	PISO
+
+} {} {}} /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project/MSDAP/rj_memory.v {1 {vlog -work work -stats=none /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project/MSDAP/rj_memory.v
+Model Technology ModelSim DE vlog 2022.1 Compiler 2022.01 Jan 29 2022
+-- Compiling module rj_memory
+
+Top level modules:
+	rj_memory
+
+} {} {}} /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project1/MSDAP/PISO.v {1 {vlog -work work -stats=none /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project1/MSDAP/PISO.v
+Model Technology ModelSim DE vlog 2022.1 Compiler 2022.01 Jan 29 2022
+-- Compiling module PISO
+
+Top level modules:
+	PISO
+
+} {} {}} /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project1/MSDAP/SIPO.v {1 {vlog -work work -stats=none /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project1/MSDAP/SIPO.v
+Model Technology ModelSim DE vlog 2022.1 Compiler 2022.01 Jan 29 2022
+-- Compiling module SIPO
+
+Top level modules:
+	SIPO
+
+} {} {}} /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project1/MSDAP/top.v {1 {vlog -work work -stats=none /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project1/MSDAP/top.v
+Model Technology ModelSim DE vlog 2022.1 Compiler 2022.01 Jan 29 2022
+-- Compiling module top
+
+Top level modules:
+	top
+
+} {} {}} /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project/MSDAP/alu_controller.v {1 {vlog -work work -stats=none /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project/MSDAP/alu_controller.v
+Model Technology ModelSim DE vlog 2022.1 Compiler 2022.01 Jan 29 2022
+-- Compiling module alu_controller
+
+Top level modules:
+	alu_controller
+
+} {} {}} /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project/MSDAP/tb.v {1 {vlog -work work -stats=none /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project/MSDAP/tb.v
+Model Technology ModelSim DE vlog 2022.1 Compiler 2022.01 Jan 29 2022
+-- Compiling module tb
+
+Top level modules:
+	tb
+
+} {} {}} /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project1/MSDAP/alu_controller.v {1 {vlog -work work -stats=none /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project1/MSDAP/alu_controller.v
+Model Technology ModelSim DE vlog 2022.1 Compiler 2022.01 Jan 29 2022
+-- Compiling module alu_controller
+
+Top level modules:
+	alu_controller
+
+} {} {}} /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project1/MSDAP/shift_accumulator.v {1 {vlog -work work -stats=none /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project1/MSDAP/shift_accumulator.v
+Model Technology ModelSim DE vlog 2022.1 Compiler 2022.01 Jan 29 2022
+-- Compiling module shift_accumulator
+
+Top level modules:
+	shift_accumulator
+
+} {} {}} /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project1/MSDAP/tb.v {1 {vlog -work work -stats=none /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project1/MSDAP/tb.v
+Model Technology ModelSim DE vlog 2022.1 Compiler 2022.01 Jan 29 2022
+-- Compiling module tb
+
+Top level modules:
+	tb
+
+} {} {}} /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project/MSDAP/adder.v {1 {vlog -work work -stats=none /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project/MSDAP/adder.v
+Model Technology ModelSim DE vlog 2022.1 Compiler 2022.01 Jan 29 2022
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}} /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project1/MSDAP/main_controller.v {1 {vlog -work work -stats=none /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project1/MSDAP/main_controller.v
+Model Technology ModelSim DE vlog 2022.1 Compiler 2022.01 Jan 29 2022
+-- Compiling module main_controller
+
+Top level modules:
+	main_controller
+
+} {} {}} /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project/MSDAP/top.v {1 {vlog -work work -stats=none /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project/MSDAP/top.v
+Model Technology ModelSim DE vlog 2022.1 Compiler 2022.01 Jan 29 2022
+-- Compiling module top
+
+Top level modules:
+	top
+
+} {} {}} /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project/MSDAP/coeff_memory.v {1 {vlog -work work -stats=none /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project/MSDAP/coeff_memory.v
+Model Technology ModelSim DE vlog 2022.1 Compiler 2022.01 Jan 29 2022
+-- Compiling module coeff_memory
+
+Top level modules:
+	coeff_memory
+
+} {} {}} /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project1/MSDAP/data_memory.v {1 {vlog -work work -stats=none /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project1/MSDAP/data_memory.v
+Model Technology ModelSim DE vlog 2022.1 Compiler 2022.01 Jan 29 2022
+-- Compiling module data_memory
+
+Top level modules:
+	data_memory
+
+} {} {}} /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project1/MSDAP/coeff_memory.v {1 {vlog -work work -stats=none /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project1/MSDAP/coeff_memory.v
+Model Technology ModelSim DE vlog 2022.1 Compiler 2022.01 Jan 29 2022
+-- Compiling module coeff_memory
+
+Top level modules:
+	coeff_memory
+
+} {} {}} /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project/MSDAP/shift_accumulator.v {1 {vlog -work work -stats=none /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project/MSDAP/shift_accumulator.v
+Model Technology ModelSim DE vlog 2022.1 Compiler 2022.01 Jan 29 2022
+-- Compiling module shift_accumulator
+
+Top level modules:
+	shift_accumulator
+
+} {} {}} /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project1/MSDAP/rj_memory.v {1 {vlog -work work -stats=none /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project1/MSDAP/rj_memory.v
+Model Technology ModelSim DE vlog 2022.1 Compiler 2022.01 Jan 29 2022
+-- Compiling module rj_memory
+
+Top level modules:
+	rj_memory
+
+} {} {}} /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project/MSDAP/main_controller.v {1 {vlog -work work -stats=none /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project/MSDAP/main_controller.v
+Model Technology ModelSim DE vlog 2022.1 Compiler 2022.01 Jan 29 2022
+-- Compiling module main_controller
+
+Top level modules:
+	main_controller
+
+} {} {}} /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project1/MSDAP/adder.v {1 {vlog -work work -stats=none /home/011/k/kx/kxr230001/Spring25/ASIC_DESIGN/Final_Project1/MSDAP/adder.v
+Model Technology ModelSim DE vlog 2022.1 Compiler 2022.01 Jan 29 2022
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}}

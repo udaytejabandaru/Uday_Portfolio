@@ -1,0 +1,61 @@
+From b6f772325f71436cc122f52520dc0b3480ca0313 Mon Sep 17 00:00:00 2001
+From: Uday <utb220000@utdallas.edu>
+Date: Thu, 20 Apr 2023 01:19:53 -0500
+Subject: [PATCH] Change the size of BP's according to document
+
+---
+ cpu/pred/BranchPredictor.py | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+
+diff --git a/cpu/pred/BranchPredictor.py b/cpu/pred/BranchPredictor.py
+index f7269f9..1626139 100644
+--- a/cpu/pred/BranchPredictor.py
++++ b/cpu/pred/BranchPredictor.py
+@@ -37,7 +37,7 @@ class BranchPredictor(SimObject):
+     abstract = True
+ 
+     numThreads = Param.Unsigned(1, "Number of threads")
+-    BTBEntries = Param.Unsigned(4096, "Number of BTB entries")
++    BTBEntries = Param.Unsigned(2048, "Number of BTB entries")
+     BTBTagSize = Param.Unsigned(16, "Size of the BTB tags, in bits")
+     RASSize = Param.Unsigned(16, "RAS size")
+     instShiftAmt = Param.Unsigned(2, "Number of bits to shift instructions by")
+@@ -48,7 +48,7 @@ class LocalBP(BranchPredictor):
+     cxx_class = 'LocalBP'
+     cxx_header = "cpu/pred/2bit_local.hh"
+ 
+-    localPredictorSize = Param.Unsigned(2048, "Size of local predictor")
++    localPredictorSize = Param.Unsigned(1024, "Size of local predictor")
+     localCtrBits = Param.Unsigned(2, "Bits per counter")
+ 
+ 
+@@ -56,12 +56,12 @@ class TournamentBP(BranchPredictor):
+     type = 'TournamentBP'
+     cxx_class = 'TournamentBP'
+     cxx_header = "cpu/pred/tournament.hh"
+-    localPredictorSize = Param.Unsigned(2048, "Size of local predictor")
++    localPredictorSize = Param.Unsigned(1024, "Size of local predictor")
+     localCtrBits = Param.Unsigned(2, "Bits per counter")
+     localHistoryTableSize = Param.Unsigned(2048, "size of local history table")
+-    globalPredictorSize = Param.Unsigned(8192, "Size of global predictor")
++    globalPredictorSize = Param.Unsigned(4096, "Size of global predictor")
+     globalCtrBits = Param.Unsigned(2, "Bits per counter")
+-    choicePredictorSize = Param.Unsigned(8192, "Size of choice predictor")
++    choicePredictorSize = Param.Unsigned(4096, "Size of choice predictor")
+     choiceCtrBits = Param.Unsigned(2, "Bits of choice counters")
+ 
+ 
+@@ -70,8 +70,8 @@ class BiModeBP(BranchPredictor):
+     cxx_class = 'BiModeBP'
+     cxx_header = "cpu/pred/bi_mode.hh"
+ 
+-    globalPredictorSize = Param.Unsigned(8192, "Size of global predictor")
++    globalPredictorSize = Param.Unsigned(2048, "Size of global predictor")
+     globalCtrBits = Param.Unsigned(2, "Bits per counter")
+-    choicePredictorSize = Param.Unsigned(8192, "Size of choice predictor")
++    choicePredictorSize = Param.Unsigned(2048, "Size of choice predictor")
+     choiceCtrBits = Param.Unsigned(2, "Bits of choice counters")
+ 
+-- 
+1.8.3.1
+

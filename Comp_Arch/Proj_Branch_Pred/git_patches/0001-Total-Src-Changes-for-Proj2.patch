@@ -1,0 +1,84 @@
+From 2812b8eba37e95f43e63a9af3382a4feae50ec15 Mon Sep 17 00:00:00 2001
+From: Uday <utb220000@utdallas.edu>
+Date: Thu, 20 Apr 2023 11:36:40 -0500
+Subject: [PATCH] Total Src Changes for Proj2
+
+---
+ cpu/pred/bpred_unit.cc      | 6 ++++++
+ cpu/pred/bpred_unit.hh      | 2 ++
+ cpu/simple/BaseSimpleCPU.py | 2 +-
+ cpu/simple/base.cc          | 5 +++++
+ cpu/simple/exec_context.hh  | 1 +
+ 5 files changed, 15 insertions(+), 1 deletion(-)
+
+diff --git a/cpu/pred/bpred_unit.cc b/cpu/pred/bpred_unit.cc
+index a5e1ffd..2f7ffed 100644
+--- a/cpu/pred/bpred_unit.cc
++++ b/cpu/pred/bpred_unit.cc
+@@ -116,6 +116,12 @@ BPredUnit::regStats()
+         .name(name() + ".RASInCorrect")
+         .desc("Number of incorrect RAS predictions.")
+         ;
++
++    BTBMissPct
++        .name(name() + ".BTBMissPct")
++        .desc("BTB Miss Percentage")
++        .precision(6);
++    BTBMissPct = (1-(BTBHits / BTBLookups)) * 100;
+ }
+ 
+ ProbePoints::PMUUPtr
+diff --git a/cpu/pred/bpred_unit.hh b/cpu/pred/bpred_unit.hh
+index bef8cb9..4ee362f 100644
+--- a/cpu/pred/bpred_unit.hh
++++ b/cpu/pred/bpred_unit.hh
+@@ -294,6 +294,8 @@ class BPredUnit : public SimObject
+     Stats::Scalar usedRAS;
+     /** Stat for number of times the RAS is incorrect. */
+     Stats::Scalar RASIncorrect;
++    /** Stat for percent times an entry in BTB is unfound. */
++    Stats::Formula BTBMissPct;
+ 
+   protected:
+     /** Number of bits to shift instructions by for predictor addresses. */
+diff --git a/cpu/simple/BaseSimpleCPU.py b/cpu/simple/BaseSimpleCPU.py
+index 7298724..1fe94df 100644
+--- a/cpu/simple/BaseSimpleCPU.py
++++ b/cpu/simple/BaseSimpleCPU.py
+@@ -48,4 +48,4 @@ class BaseSimpleCPU(BaseCPU):
+             print "ERROR: Checker only supported under ARM ISA!"
+             exit(1)
+ 
+-    branchPred = Param.BranchPredictor(NULL, "Branch Predictor")
++    branchPred = Param.BranchPredictor(TournamentBP(), "Branch Predictor")
+diff --git a/cpu/simple/base.cc b/cpu/simple/base.cc
+index 4d5ddeb..38341ab 100644
+--- a/cpu/simple/base.cc
++++ b/cpu/simple/base.cc
+@@ -379,6 +379,11 @@ BaseSimpleCPU::regStats()
+             .name(thread_str + ".BranchMispred")
+             .desc("Number of branch mispredictions")
+             .prereq(t_info.numBranchMispred);
++        t_info.BranchMispredPercent
++            .name(thread_str + ".BranchMispredPercent")
++            .desc("percent of branch mispred")
++            .prereq(t_info.BranchMispredPercent);
++        t_info.BranchMispredPercent = (t_info.numBranchMispred / t_info.numBranches) * 100;
+     }
+ }
+ 
+diff --git a/cpu/simple/exec_context.hh b/cpu/simple/exec_context.hh
+index f9d80d0..6dd84cb 100644
+--- a/cpu/simple/exec_context.hh
++++ b/cpu/simple/exec_context.hh
+@@ -147,6 +147,7 @@ class SimpleExecContext : public ExecContext {
+     Stats::Scalar numPredictedBranches;
+     /// Number of misprediced branches
+     Stats::Scalar numBranchMispred;
++    Stats::Formula BranchMispredPercent;
+     /// @}
+ 
+    // Instruction mix histogram by OpClass
+-- 
+1.8.3.1
+
